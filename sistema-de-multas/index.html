@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENTRAN</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script> //Criando um bloco de funcões para poder calcular a velocidade do carro.
+        function calcular(){
+            var txtv = window.document.querySelector('input#txtvel')//Essa variável vai ser a ligação do meu HTML com JS.
+            var res = window.document.querySelector('div#res')
+            var vel = Number(txtv.value) //Peguei a velocidade digitada na variável txtv que estava em string e tranformei em número. 
+            res.innerHTML = `<p>Sua velocidade é de <strong>${vel} Km/h</strong></p>`
+            if(vel > 60){
+                res.innerHTML += `<p>Limite de velocidade excedido. <strong>MULTADO!</strong></p>`
+            } else {
+            res.innerHTML += `<p>Dirija sempre com o cinto de segurança!</p>`
+            }
+        }
+    </script>
+
+    
+        
+
+</body>
+</html>
