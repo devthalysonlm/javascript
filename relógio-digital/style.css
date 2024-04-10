@@ -1,0 +1,56 @@
+body{
+    
+    background: rgb(84, 127, 245);
+    font: normal 15pt Arial;
+}
+header{
+
+    text-align: center;
+    color: white;
+
+}
+section{
+
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    text-align: center; /*Coloca o texto no centro */
+    margin: auto; /* Coloca o radio em braco no centro*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+
+}
+footer{
+
+    text-align: center;
+    color: white;
+    font-style: italic;
+
+}
+img{
+    border-radius: 10px;
+    border-radius: 100%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px; 
+    padding: 1px;
+    background-color: rgba(184, 28, 28, 0);
+    box-shadow: 5px 5px 10px rgb(95, 95, 105);
+    margin: 5%;
+
+}
+div#msg {
+    padding: 15px;
+    background-color: rgba(184, 28, 28, 0);
+    border-radius: 12px;
+    padding: 15px;
+    width: 470px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgb(95, 95, 105);
+    
+    
+}
+
+    
+    
+
